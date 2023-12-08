@@ -1,0 +1,45 @@
+version: "3"
+
+services:
+  database:
+    image: "mysql:latest"
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: saloodo
+      MYSQL_PASSWORD: 1234
+      MYSQL_ALLOW_EMPTY_PASSWORD: ok
+    volumes:
+      - db:/var/lib/mysql
+    networks:
+      - backend
+  backend:
+    build:
+      context: ./server
+    ports:
+      - "3001:3001"
+    depends_on:
+      - database
+    environment:
+      - DB_HOST=localhost
+      - DB_USER=root
+      - DB_PASSWORD=1234
+      - DB_NAME=saloodo
+      - DB_PORT=3306
+      - CLIENT_ORIGIN=http://127.0.0.1:3000
+    networks:
+      - backend
+      - frontend
+  frontend:
+    depends_on:
+      - database
+    build:
+      context: ./client
+    ports:
+      - "3000:3000"
+
+volumes:
+    db:
+
+networks:
+  backend:
+  frontend:

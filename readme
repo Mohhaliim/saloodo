@@ -1,0 +1,17 @@
+if running local head to the server/config/config.js do the commented changes.
+    npm install in both
+    npm run dev for client
+    npm start for server
+
+if running in docker
+    docker-compose build
+    docker-compose up
+
+potinital issues you might face on docker
+    if database is not created for some reason
+    head to the server container and then these commands
+    npx sequelize-cli db:create && npx sequelize-cli db:seed:all
+
+    ps. it should work out the box but for some reason it sometimes don't
+    i also know this code be optimized alot especially the frontend handling the rquests, using redux, displaying messages
+    and alot more, but i had no time unfortuantly. thank you for your understanding.

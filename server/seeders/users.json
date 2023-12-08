@@ -1,0 +1,17 @@
+[
+    { "name": "John Doe", "email": "user1@example.com", "password": "password1", "type": "sender" },
+    { "name": "Michael White", "email": "user2@example.com", "password": "password2", "type": "sender" },
+    { "name": "Alice Johnson", "email": "user3@example.com", "password": "password3", "type": "sender" },
+    { "name": "Bob Smith", "email": "user4@example.com", "password": "password4", "type": "sender" },
+    { "name": "Emma Watson", "email": "user5@example.com", "password": "password5", "type": "sender" },
+    { "name": "Miller Brown", "email": "user6@example.com", "password": "password6", "type": "biker" },
+    { "name": "Olivia Davis", "email": "user7@example.com", "password": "password7", "type": "biker" },
+    { "name": "David Miller", "email": "user8@example.com", "password": "password8", "type": "biker" },
+    { "name": "Sophia Wilson", "email": "user9@example.com", "password": "password9", "type": "biker" },
+    { "name": "Daniel Taylor", "email": "user10@example.com", "password": "password10", "type": "biker" },
+    { "name": "Ava Jones", "email": "user11@example.com", "password": "password11", "type": "biker" },
+    { "name": "James White", "email": "user12@example.com", "password": "password12", "type": "biker" },
+    { "name": "Emily Harris", "email": "user13@example.com", "password": "password13", "type": "biker" },
+    { "name": "Ethan Clark", "email": "user14@example.com", "password": "password14", "type": "biker" },
+    { "name": "Mia Martin", "email": "user15@example.com", "password": "password15", "type": "biker" }
+]
